@@ -1,0 +1,54 @@
+@import '../../assets/helpers/_variables';
+
+.profile-subject {
+  display: inline-block;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    height: 44px;
+    width: 44px;
+    border-style: double;
+    border-width: 8px;
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s ease-in;
+  }
+
+  &:before {
+    border-left-color: $orange-color;
+    border-top-color: $orange-color;
+    border-right-color: $transp;
+    border-bottom-color: $transp;
+    transform: translateX(-130px);
+  }
+
+  &:after {
+    border-right-color: $orange-color;
+    border-bottom-color: $orange-color;
+    border-left-color: $transp;
+    border-top-color: $transp;
+    transform: translateX(130px);
+  }
+
+  &.is-animate {
+    &:before {
+      transform: translateX(-50px);
+      opacity: 1;
+    }
+
+    &:after {
+      transform: translateX(-15px);
+      opacity: 1;
+    }
+  }
+}
+
+.profile-name {
+  font-size: 46px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
