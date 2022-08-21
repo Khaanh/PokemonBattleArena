@@ -1,0 +1,18 @@
+<div class="profile">
+  <i>Element</i>
+  <app-elem-energy></app-elem-energy>
+  <app-elem-power></app-elem-power>
+  <app-elem-health></app-elem-health>
+  <app-elem-defense></app-elem-defense>
+  <app-profile-holder></app-profile-holder>
+</div>
+
+<ul>
+  <li *ngFor="let pokemon of profile; let idx = index">
+    <p>{{pokemon.name}}</p>
+    <p>{{pokemon.element}}</p>
+    <p>{{pokemon.skills.power}}</p>
+    <p>{{pokemon.skills.health}}</p>
+    <p>{{pokemon.skills.def}}</p>
+  </li>
+</ul>

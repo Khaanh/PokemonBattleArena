@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './profile/profile.component';
-import { ProfilePicComponent } from './profile-pic/profile-pic.component';
-import { ProfileNameComponent } from './profile-name/profile-name.component';
-import { ProfileHolderComponent } from './profile-holder/profile-holder.component';
+import { ProfileComponent } from './profile-components/profile/profile.component';
+import { ProfilePicComponent } from './profile-components/profile-pic/profile-pic.component';
+import { ProfileNameComponent } from './profile-components/profile-name/profile-name.component';
+import { ProfileHolderComponent } from './profile-components/profile-holder/profile-holder.component';
+import { ElemEnergyComponent } from './skills-components/elem-energy/elem-energy.component';
+import { ElemPowerComponent } from './skills-components/elem-power/elem-power.component';
+import { ElemHealthComponent } from './skills-components/elem-health/elem-health.component';
+import { ElemDefenseComponent } from './skills-components/elem-defense/elem-defense.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ProfileHolderComponent } from './profile-holder/profile-holder.componen
     ProfileComponent,
     ProfilePicComponent,
     ProfileNameComponent,
-    ProfileHolderComponent
+    ProfileHolderComponent,
+    ElemEnergyComponent,
+    ElemPowerComponent,
+    ElemHealthComponent,
+    ElemDefenseComponent
   ],
   imports: [
     BrowserModule,
