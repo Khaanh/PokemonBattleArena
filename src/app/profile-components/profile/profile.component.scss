@@ -1,6 +1,7 @@
 @import '../../../assets/helpers/_variables';
 
 .profile {
+  position: relative;
   border: 5px solid $orange-color;
   border-radius: 8px;
   width: 20%;

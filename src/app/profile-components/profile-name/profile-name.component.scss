@@ -3,6 +3,7 @@
 .profile-subject {
   display: inline-block;
   position: relative;
+  margin-bottom: 30px;
 
   &:after,
   &:before {
@@ -47,8 +48,8 @@
 }
 
 .profile-name {
-  font-size: 46px;
-  line-height: 50px;
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }

@@ -1,8 +1,9 @@
-<input type="text" placeholder="Name" [(ngModel)]="pokemonName"> <br>
-<input type="text" placeholder="Fire" [(ngModel)]="pokemonElement"> <br>
-<input type="text" placeholder="Power" [(ngModel)]="power"> <br>
-<input type="text" placeholder="Health" [(ngModel)]="health"> <br>
-<input type="text" placeholder="Def" [(ngModel)]="def"> <br>
+Name: <input type="text" placeholder="Name" [(ngModel)]="pokemonName"> <br>
+
+Element: <input type="text" placeholder="Element" [(ngModel)]="pokemonElement"> <br>
+Leben: <input type="text" placeholder="Leben" [(ngModel)]="health"> <br>
+Kraft: <input type="text" placeholder="Kraft" [(ngModel)]="power"> <br>
+Shild: <input type="text" placeholder="Schild" [(ngModel)]="def"> <br>
 <button (click)="setProfile()">Set profile</button>
 <button (click)="addPokemon()" [disabled]="addPokemonStatus">Add new Pokemon!</button>
 
