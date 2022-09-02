@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Input, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-elem-power',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./elem-power.component.scss']
 })
 export class ElemPowerComponent implements OnInit {
+
+  @Input() powerComp: number = 0;
 
   constructor() { }
 
