@@ -1,1 +1,47 @@
-<p>add-new-pokemon works!</p>
+<div class="modal">
+  <button class="modal-btn">
+    <img src="../../../assets/img/pokeball.png" alt="pokeball" width="64" height="64">
+  </button>
+  <div class="modal-holder">
+
+    <form action="" class="modal-form">
+      <div class="modal-form__label-group">
+
+        <label class="modal-form__label">
+          <p>Name:</p>
+          <input class="modal-form__control" type="text" placeholder="test">
+          <!-- <input class="modal-form__control" type="text" placeholder="Name" [(ngModel)]="pokemonName"> <br> -->
+        </label>
+        <label class="modal-form__label">
+          <p>Element:</p>
+          <input class="modal-form__control" type="text" placeholder="test">
+          <!-- <input class="modal-form__control" type="text" placeholder="Element" [(ngModel)]="pokemonElement"> <br> -->
+        </label>
+        <label class="modal-form__label">
+          <p>Leben:</p>
+          <input class="modal-form__control" type="text" placeholder="test">
+          <!-- <input class="modal-form__control" type="number" placeholder="Leben" [(ngModel)]="health"> <br> -->
+        </label>
+        <label class="modal-form__label">
+          <p>Kraft:</p>
+          <input class="modal-form__control" type="text" placeholder="test">
+          <!-- <input class="modal-form__control" type="number" placeholder="Kraft" [(ngModel)]="power"> <br> -->
+        </label>
+        <label class="modal-form__label">
+          <p>Shild:</p>
+          <input class="modal-form__control" type="text" placeholder="test">
+          <!-- <input class="modal-form__control" type="number" placeholder="Schild" [(ngModel)]="def"> <br> -->
+        </label>
+      </div>
+
+      <div class="modal-form__set-img">
+        <label class="modal-form__pic">
+          <input type="file">
+        </label>
+      </div>
+
+      <!-- <button (click)="setProfile()">Set profile</button> -->
+      <!-- <button (click)="addPokemon()" [disabled]="addPokemonStatus">Add new Pokemon!</button> -->
+    </form>
+  </div>
+</div>

@@ -1,11 +1,33 @@
-Name: <input type="text" placeholder="Name" [(ngModel)]="pokemonName"> <br>
+<!-- <div class="modal">
+  <img src="../../../assets/img/pokeball.png" alt="pokeball" width="64" height="64">
+  <form action="" class="modal-form">
+    <label class="modal-label">
+      <p>Name:</p>
+      <input type="text" placeholder="Name" [(ngModel)]="pokemonName"> <br>
+    </label>
+    <label class="modal-label">
+      <p>Element:</p>
+      <input type="text" placeholder="Element" [(ngModel)]="pokemonElement"> <br>
+    </label>
+    <label class="modal-label">
+      <p>Leben:</p>
+      <input type="number" placeholder="Leben" [(ngModel)]="health"> <br>
+    </label>
+    <label class="modal-label">
+      <p>Kraft:</p>
+      <input type="number" placeholder="Kraft" [(ngModel)]="power"> <br>
+    </label>
+    <label class="modal-label">
+      <p>Shild:</p>
+      <input type="number" placeholder="Schild" [(ngModel)]="def"> <br>
+    </label>
 
-Element: <input type="text" placeholder="Element" [(ngModel)]="pokemonElement"> <br>
-Leben: <input type="number" placeholder="Leben" [(ngModel)]="health"> <br>
-Kraft: <input type="number" placeholder="Kraft" [(ngModel)]="power"> <br>
-Shild: <input type="number" placeholder="Schild" [(ngModel)]="def"> <br>
-<button (click)="setProfile()">Set profile</button>
-<button (click)="addPokemon()" [disabled]="addPokemonStatus">Add new Pokemon!</button>
+    <button (click)="setProfile()">Set profile</button>
+    <button (click)="addPokemon()" [disabled]="addPokemonStatus">Add new Pokemon!</button>
+  </form>
+</div> -->
+<add-new-pokemon></add-new-pokemon>
+
 
 <div class="profile" *ngFor="let pokemon of profile">
   <i>Element</i>

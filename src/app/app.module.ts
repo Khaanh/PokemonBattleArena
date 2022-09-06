@@ -12,6 +12,7 @@ import { ElemEnergyComponent } from './skills-components/elem-energy/elem-energy
 import { ElemPowerComponent } from './skills-components/elem-power/elem-power.component';
 import { ElemHealthComponent } from './skills-components/elem-health/elem-health.component';
 import { ElemDefenseComponent } from './skills-components/elem-defense/elem-defense.component';
+import { AddNewPokemonComponent } from './popup/add-new-pokemon/add-new-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ElemDefenseComponent } from './skills-components/elem-defense/elem-defe
     ElemEnergyComponent,
     ElemPowerComponent,
     ElemHealthComponent,
-    ElemDefenseComponent
+    ElemDefenseComponent,
+    AddNewPokemonComponent,
   ],
   imports: [
     BrowserModule,
