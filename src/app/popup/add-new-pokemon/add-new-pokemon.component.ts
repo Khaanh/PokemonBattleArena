@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-new-pokemon.component.scss']
 })
 export class AddNewPokemonComponent implements OnInit {
+  modalToggle: boolean = false;
+
+  toggleModal() {
+    this.modalToggle == false ? this.modalToggle = true : this.modalToggle = false;
+    // this.modalToggle = true;
+  }
 
   constructor() { }
 

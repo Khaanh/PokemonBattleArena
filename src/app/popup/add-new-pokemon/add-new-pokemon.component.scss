@@ -1,32 +1,53 @@
 .modal {
-  max-width: 500px;
-  min-height: 64px;
-  margin: 10px auto 0;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  // opacity: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transform: translate(-50%, 0);
+  transition: background-color 0.5s linear, opacity 0.3s ease;
+
+  &.is-overlay {
+    z-index: 999;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.modal-container {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
+  width: 100%;
+  // position: absolute;
+  // left: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // transform: translate(-50%, calc(-100% - 44px));
+  transition: transform 0.3s linear;
+
+  &.is-open {
+    transform: translate(-50%, 0);
+  }
 }
 
 .modal-holder {
   width: 100%;
   margin-bottom: 10px;
-  // transform: translate(0, calc(-100% - 10px));
   transition: transform 0.2s linear;
-  // position: absolute;
-  // right: 0;
-  // top: 0;
-  // display: flex;
-  // justify-content: center;
-  // align-items: flex-start;
 }
 
-.modal-btn {
+.modal-btn-close {
   cursor: pointer;
-  // position: absolute;
-  // left: 0;
-  // top: 0;
   padding: 0;
   width: 64px;
   height: 64px;
@@ -36,7 +57,7 @@
   img {
     width: 100%;
     height: auto;
-    transform: scale(1);
+    transform: scale(1) rotate(0);
     transform-origin: center;
     transition: transform 0.2s linear;
   }
@@ -45,6 +66,16 @@
   &:hover {
     img {
       transform: scale(0.9);
+    }
+  }
+
+  &.is-rotate {
+    img {
+      transition-delay: 0.1s;
+      transition-duration: 1s;
+      transition-property: transform;
+      transition-timing-function: linear;
+      transform: scale(1) rotate(720deg);
     }
   }
 }
